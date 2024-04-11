@@ -1,0 +1,25 @@
+/* TrainSlider.css */
+.train-slider {
+  width: 100%;
+  height: 200px; /* 이미지 높이에 맞게 조정합니다. */
+  overflow: hidden;
+  position: relative;
+}
+
+.train-images {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  animation: moveTrain 20s linear infinite; /* 이동 애니메이션을 적용합니다. */
+}
+
+@keyframes moveTrain {
+  0% {
+    left: 100%; /* 시작 위치를 오른쪽 화면 끝으로 설정합니다. */
+  }
+  100% {
+    left: -100%; /* 100% 이동한 후 왼쪽 화면 끝으로 이동합니다. */
+  }
+}
+
+  
